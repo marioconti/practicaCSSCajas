@@ -1,69 +1,64 @@
 /* se puede directamente poner todos los estilos en un documento externo de css */
 /* recordar que son estilos en cascadas y por eso los ultimos tienen prioridad (pizarán) a los que están más arriba */
-<style>   
-    body{
-        margin: 0;}
-        /*  esto para que se vea mejor lo que vamos a hacer. cero de margen */
-    header { width: 100%;
-        /* es es el 100 por 100 del espacio del navegador */
-        height: 50px;
-        background-color: #15B362;
-            /* la propiedad padding hace que */
-            padding: 10px;
-        }
-        /* # es para buscar un elemento puntual */
-    #links{
-        background-color: royalblue;
-    }
-    ul li{
-        display: inline-block ;
-        padding: 7px;
-        background-color: #eeeeee;
-        margin-left: 5px;
-
-    }
-    #logo{
-        /* existen también la propiedad de posición*/
-            position: relative;
-            width: 150px;
-            height: 50px;
-            background-color: chartreuse;
-            border: 1px solid coral;
-
-        }
-
-        /* display block viene dado por defecto en las cajas (div) */
-    .cajas1{
-        /* aquí hay un display:block */
-        /* el display block ocupa todo el ancho completo de la pantalla */
-        border: 1px solid black;
-        width: 150px; height: 150px; background-color: yellow;
-        margin: 10px;
-    }
-
-    .cajas2{
-        /* display inline solo ocupa lo que tiene el contenido, por esto no pueden ser redimencionados
-        SOLAMENTE PUEDE DARSELES ESTILOS DE COLORES */
-        display: inline;
-        border: 1px solid black;
-        width: 150px; height: 150px; background-color: yellow;
-        margin: 10px;
-        }
-        /* Puede haber un display inline-block es decir combinado
-        Solo lo que ocupa el contenido mas pero sin ocupar toda la linea
-        ES LO MEJOR */
-
-        
-    .cajas3{
-        display: inline-block;
-        border: 1px solid black;
-        width: 150px; 
-        height: 150px; 
-        background-color: yellow;
-        margin: 30px 10px;
-        padding: 5px;
-        }   
-.texto {
-    color: red;
+body {
+  margin: 0;
 }
-</style>
+/*  esto para que se vea mejor lo que vamos a hacer (cero de margen de todos lados) */
+header {
+  width: 100%;
+  /* es es el 100 por 100 del espacio del navegador */
+  height: 50px;
+  background-color: #15b362;
+  padding: 10px;
+}
+#links {
+  background-color: royalblue;
+}
+ul li {
+  display: inline-block;
+  padding: 7px;
+  background-color: #eeeeee;
+  margin-left: 5px;
+}
+#logo {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  background-color: chartreuse;
+  border: 1px solid coral;
+}
+/* display block viene dado por defecto en las cajas (div) */
+.cajas1 {
+  /* aquí hay un display:block */
+  /* el display block ocupa todo el ancho completo de la pantalla */
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+.cajas2 {
+  /* display inline solo ocupa lo que tiene el contenido, por esto no pueden ser redimencionados*/
+  display: inline;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  margin: 10px;
+}
+
+/* Puede haber un display inline-block es decir combinado, ocupando solo el contenido y no toda la linea (recomendado)*/
+
+.cajas3 {
+  display: inline-block;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  margin: 30px 10px;
+  padding: 5px;
+}
+.texto {
+  color: red;
+}
